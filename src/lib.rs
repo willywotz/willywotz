@@ -24,11 +24,12 @@ async fn fetch(req: Request, _env: Env, _ctx: Context) -> Result<Response> {
         width: 100%;
         height: 100%;
         border: 0;
+        overflow: hidden;
       }
     </style>
   </head>
   <body>
-    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FBangkok&showPrint=0&src=ZTkxN2EzYjEyMWEzZjg3NjA3OWI2ZDE4YmVmYzM0NmE5ZGJiNTljZjRhOWY1ZDYwOTI4NGFiZjZhNjc3MzVlMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233f51b5" frameborder="0" scrolling="no"></iframe>
+    <iframe title="Google Calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FBangkok&showPrint=0&src=ZTkxN2EzYjEyMWEzZjg3NjA3OWI2ZDE4YmVmYzM0NmE5ZGJiNTljZjRhOWY1ZDYwOTI4NGFiZjZhNjc3MzVlMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233f51b5"></iframe>
   </body>
 </html>"#,
         ),
