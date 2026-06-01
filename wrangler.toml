@@ -1,6 +1,6 @@
 name = "willywotz"
-main = "build/worker/shim.mjs"
-compatibility_date = "2025-01-31"
+main = "build/index.js"
+compatibility_date = "2026-06-01"
 
 [build]
-command = "curl https://sh.rustup.rs -sSf | sh -s -- -y && source $HOME/.cargo/env && cargo install -q worker-build && worker-build --release"
+command = "cargo install -q \"worker-build@^0.8\" && worker-build --release"
